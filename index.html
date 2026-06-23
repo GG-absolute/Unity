@@ -8,12 +8,11 @@
 </head>
 <body>
     
-<header class="w-full bg-white px-8 py-5 flex items-center justify-between shadow-sm font-sans">
-    <!-- Логотип или пустой блок слева -->
-    <div></div>
+<header class="w-full bg-white px-8 py-5 flex items-center justify-between shadow-sm font-sans sticky top-0 z-50">
+    <a href="#" class="lg:block hidden">
+    </a>
 
-    <!-- Ссылки навигации -->
-    <ul class="flex items-center gap-10 text-gray-700 font-medium">
+    <ul class="hidden md:flex items-center gap-10 text-gray-700 font-medium">
         <li><a href="#" class="hover:text-[#2ba873] transition-colors">Booking</a></li>
         <li><a href="#" class="hover:text-[#2ba873] transition-colors">Facilities</a></li>
         <li><a href="#" class="hover:text-[#2ba873] transition-colors">About Us</a></li>
@@ -21,10 +20,12 @@
         <li><a href="#" class="hover:text-[#2ba873] transition-colors">Contact</a></li>
     </ul>
 
-    <!-- Кнопка Login справа -->
-    <div>
+    <div class="flex items-center gap-50">
         <button class="bg-[#2ba873] text-white px-8 py-2.5 rounded-full font-medium hover:bg-[#238c60] transition-colors">
             Login
+        </button>
+        <button class="md:hidden text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </div>
 </header>
@@ -69,6 +70,78 @@
         Search
       </button>
     </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto py-12 px-6 font-sans">
+  <!-- Шапка секции -->
+  <div class="flex flex-wrap justify-between items-end mb-8 gap-4">
+    <div class="max-w-md">
+      <h2 class="text-4xl font-bold text-gray-900 mb-3">Our most popular Hotels</h2>
+      <p class="text-gray-500 text-sm leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <button class="bg-[#e8f7f1] text-[#2ba873] px-5 py-2 rounded-full text-sm font-medium hover:bg-[#2ba873] hover:text-white transition-colors">
+      View All
+    </button>
+  </div>
+
+  <!-- Контейнер карточек (Flexbox) -->
+  <div class="flex flex-wrap -mx-3">
+    
+    <!-- Карточка 1: Danubius Hotel -->
+    <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+      <div class="bg-[#fcfdfe] rounded-3xl p-4 shadow-sm border border-gray-100/50">
+        <img src="./images/image (25).png" alt="Danubius Hotel" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <div class="px-1">
+          <p class="text-[11px] text-[#2ba873] font-medium mb-1">London NW8 7JT England</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Danubius Hotel Regents Park</h3>
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-gray-900 font-semibold">$200 Par Night</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-red-400 flex gap-0.5">★★★★★</span>
+              <span class="text-gray-500 font-medium">4.8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Карточка 2: The Resident Soho -->
+    <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+      <div class="bg-[#fcfdfe] rounded-3xl p-4 shadow-sm border border-gray-100/50">
+        <img src="./images/image (27).png" alt="The Resident Soho" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <div class="px-1">
+          <p class="text-[11px] text-[#2ba873] font-medium mb-1">London NW8 7JT England</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">The Resident Soho</h3>
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-gray-900 font-semibold">$200 Par Night</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-red-400 flex gap-0.5">★★★★★</span>
+              <span class="text-gray-500 font-medium">4.8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Карточка 3: London Bridge Hotel -->
+    <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
+      <div class="bg-[#fcfdfe] rounded-3xl p-4 shadow-sm border border-gray-100/50">
+        <img src="./images/image (26).png" alt="London Bridge Hotel" class="w-full h-64 object-cover rounded-2xl mb-4">
+        <div class="px-1">
+          <p class="text-[11px] text-[#2ba873] font-medium mb-1">London NW8 7JT England</p>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">London Bridge Hotel</h3>
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-gray-900 font-semibold">$200 Par Night</span>
+            <div class="flex items-center gap-1.5">
+              <span class="text-red-400 flex gap-0.5">★★★★★</span>
+              <span class="text-gray-500 font-medium">4.8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
